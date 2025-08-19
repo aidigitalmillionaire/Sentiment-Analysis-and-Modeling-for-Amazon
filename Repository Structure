@@ -1,0 +1,45 @@
+amazon-sentiment/
+├─ README.md
+├─ LICENSE
+├─ CONTRIBUTING.md
+├─ CODE_OF_CONDUCT.md
+├─ pyproject.toml
+├─ requirements.txt
+├─ .gitignore
+├─ .env.example
+├─ Dockerfile
+├─ Makefile
+├─ dvc.yaml
+├─ data/
+│  ├─ README_DATA.md
+│  ├─ raw/                # place raw datasets here (gitignored)
+│  ├─ interim/            # processed/intermediate (gitignored)
+│  └─ processed/          # model-ready (gitignored)
+├─ notebooks/
+│  ├─ 01_exploration.ipynb
+│  └─ 02_feature_engineering.ipynb
+├─ src/
+│  ├─ __init__.py
+│  ├─ config.py
+│  ├─ data_prep.py
+│  ├─ features.py
+│  ├─ train.py
+│  ├─ evaluate.py
+│  ├─ inference.py
+│  └─ api/
+│     ├─ __init__.py
+│     └─ app.py           # FastAPI app for inference
+├─ tests/
+│  ├─ __init__.py
+│  ├─ test_data_prep.py
+│  ├─ test_features.py
+│  └─ test_inference.py
+├─ models/
+│  ├─ model.pkl           # saved model (gitignored by default)
+│  └─ vectorizer.pkl
+├─ artifacts/
+│  └─ reports/            # metrics, confusion matrices, etc.
+└─ docs/
+   ├─ DESCRIPTION.md       # ← project description (linked in README)
+   ├─ MODEL_CARD.md
+   └─ ARCHITECTURE.md
