@@ -1,0 +1,20 @@
+# Amazon Reviews Sentiment Analysis (Colab Deployment)
+
+This project performs **sentiment analysis on Amazon product reviews** using Python and Scikit-learn.  
+It was fully developed and deployed in **Google Colab** for reproducibility.
+
+## Features
+- Data cleaning and preprocessing
+- Sentiment labeling (positive if rating ≥ 4, else negative)
+- TF-IDF feature extraction
+- Logistic Regression baseline model
+- Model evaluation with precision, recall, F1
+- Interactive notebook with step-by-step explanations
+
+## Running the Notebook
+1. Open the notebook in Google Colab:
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CBHAAADrWywFAyOCwHN6x3B3IFv1w_x5?usp=sharing))
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
